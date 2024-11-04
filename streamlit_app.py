@@ -2,7 +2,7 @@
 import streamlit as st
 from snowflake.snowpark.functions import col
 import requests
-fruityvice_response = requests.get("https://rickandmortyapi.com/documentation/#get-a-single-character")
+fruityvice_response = requests.get("http://worldtimeapi.org/api/ip")
 #st.text(fruityvice_response)
 fv_df = st.dataframe(data=fruityvice_response.json(),use_container_width=True)
 
